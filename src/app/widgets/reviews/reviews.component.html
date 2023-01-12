@@ -1,0 +1,42 @@
+<div class="review-bg">
+    <div class="xrow">
+        <h3>{{reviewConfigData.reviewTitle}}</h3>
+        <p>{{reviewConfigData.reviewSubTitle}}</p>
+    </div>
+    <div class="row">
+        <div class="col-md-2" style="padding-right: 0px;">
+            <span class="star-btn">{{reviewConfigData.totalStars}}</span>
+        </div>
+        <div class="col-md-6" style="text-align: center; padding-right: 0px; ">
+            <span class="fa fa-star yellow-color" [ngClass]="reviewConfigData.customClass"> </span>
+            <span class="fa fa-star yellow-color" [ngClass]="reviewConfigData.customClass"> </span>
+            <span class="fa fa-star yellow-color" [ngClass]="reviewConfigData.customClass"> </span>
+            <span class="fa fa-star yellow-color" [ngClass]="reviewConfigData.customClass"> </span>
+            <span class="fa fa-star yellow-color" [ngClass]="reviewConfigData.customClass"> </span>
+        </div>
+        <div class="col-md-2" style="padding-right: 0px;">
+            <p class="progress-title">{{reviewConfigData.totalReviews}}</p>
+        </div>
+        <div class="col-md-2" style="padding-right: 0px;">
+            <p class="progress-title">Reviews</p>
+        </div>
+    </div>
+    <div class="row" *ngFor="let item of reviewConfigData.reviewsList">
+        <div class="col-md-2" style="padding-right: 0px;"> 
+            <p class="progress-title mtp">{{item.eachStars}}</p>
+        </div>
+        <div class="col-md-6" style="padding-right: 0px;">
+            <p class="progress-title">{{item.percentage}}%</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.mwidth }"></div>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-right: 0px;">
+            <p class="progress-title mtp">{{item.eachReviews}}</p>
+        </div>
+        <div class="col-md-2" style="padding-right: 0px;">
+            <p class="progress-title mtp">Reviews</p>
+        </div>
+    </div>
+   
+</div>

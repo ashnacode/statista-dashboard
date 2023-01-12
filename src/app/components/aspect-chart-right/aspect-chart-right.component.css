@@ -1,0 +1,11 @@
+.aspect-right .box{
+    text-align: center;
+    padding: 45px 0 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.aspect-right .aspect-right-bg{
+    background: #eef6f9;
+}

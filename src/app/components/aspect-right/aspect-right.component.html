@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="content">
+        <div class="row aspect-right">
+            <div class="col-md-6 box" *ngFor="let item of aspectBoxes">
+                <div class="aspect-right-bg{{item.backg}}">
+                    <div>
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.subTitle}}</p>
+                    </div>
+                    <div>
+                        <h3>{{item.percentage}} 
+                            <i class="{{item.icon}}" aria-hidden="true" style="float: right; color:#929292"></i>
+                        </h3> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+ 

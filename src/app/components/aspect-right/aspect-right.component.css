@@ -1,0 +1,31 @@
+.aspect-right{
+    padding: 0px 14px;
+}
+
+.aspect-right .box{
+    xtext-align: center;
+    padding: 12px;
+    xborder: 1px solid #e5e5e5;
+    xborder-radius: 6px;
+    margin: 0px;   
+}
+
+.aspect-right .aspect-right-bg2{
+    background: #f8f7f1;
+    border-radius: 27px;
+    padding: 20px 35px 30px
+}
+.aspect-right .aspect-right-bg{
+    background: #f0fbef;
+    border-radius: 27px;
+    padding: 20px 35px 30px
+}
+.aspect-right .aspect-right-bg h3{
+    color: #464c50;
+    font-weight: bold;
+}
+.aspect-right .aspect-right-bg2 h3{
+    color: #464c50;
+    font-weight: bold;
+}
+

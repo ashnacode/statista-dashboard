@@ -1,0 +1,19 @@
+
+<div class="chart-bg">
+    <h3 class="mt-1">{{chartConfigData.chartTitle}}</h3>
+    <div style="display: block">
+    
+        <canvas 
+        style="display: block;" 
+        id="canvas" 
+        #myCanvas
+        
+        baseChart 
+            [datasets]="demoradarChartData"
+            [labels]="demoradarChartLabels"
+            [type]="radarChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)">
+        </canvas>
+    </div>
+</div>
